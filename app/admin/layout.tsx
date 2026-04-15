@@ -1,0 +1,12 @@
+﻿import type { Metadata } from "next";
+
+import { privateRobots } from "@/lib/seo";
+
+export const metadata: Metadata = {
+  title: "Admin",
+  robots: privateRobots(),
+};
+
+export default function AdminLayout({ children }: { children: React.ReactNode }) {
+  return children;
+}
